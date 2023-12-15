@@ -1,0 +1,51 @@
+.brend-wrapper {
+  padding: 160px 0;
+
+  h3 {
+    color: #000;
+    margin-bottom: 34px;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 66px;
+
+    li {
+      cursor: pointer;
+    }
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .brend-wrapper {
+    * {
+      color: #fff !important;
+    }
+  }
+}
+@media only screen and (max-width: 794px) {
+  .brend-wrapper {
+    ul {
+      width: 794px;
+      overflow-y: hidden;
+    }
+  }
+}
+@media only screen and (max-width: 390px) {
+  .brend-wrapper {
+    ul {
+      width: 360px;
+      li {
+        img {
+          width: 100px;
+          height: 28px;
+        }
+      }
+    }
+  }
+}

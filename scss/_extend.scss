@@ -1,0 +1,24 @@
+//  for extends 
+
+%extandName{
+    background: red;
+    color:white;
+}
+
+
+%button{
+    padding: 19px 40px;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 100px;
+    border: 1px solid silver;
+    background-color: transparent;
+    color: black;
+}
+
+// @exstend %extandName; call to extend

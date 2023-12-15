@@ -1,0 +1,252 @@
+footer{
+    width: 100%;
+    // codes
+}
+
+
+footer{
+    border-top: 1.5px solid #E5E7EA;
+    background: #FFF;
+    padding: 40px 0;
+
+    .foter-wrapper{
+        .foter-box1{
+            align-items: flex-start;
+            display: flex;
+            justify-content: space-between;
+            gap:110px;
+            padding-bottom: 44px;
+            border-bottom: 1px solid black;
+            margin-bottom: 40px ;
+
+            div{
+                width: 240px;
+                p{
+                    color: #555;
+                    font-family: Montserrat;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 20px; /* 166.667% */
+                }
+            }
+
+            li{
+                list-style-type: none;
+                margin-bottom: 15px;
+
+                a{
+                    color: #555;
+                    font-family: Montserrat;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+            }
+
+            li:first-child{
+                margin-bottom: 16px;
+                a{
+                    color: black;
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .foter-box2{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            p{
+                color: #000;
+                font-family: Montserrat;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 24px; /* 150% */
+            }
+
+            ul{
+                li{
+                    list-style-type: none;
+                    margin-bottom: 14px;
+                    a{
+                        color: #555;
+                        font-family: Montserrat;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                    }
+                }
+
+                li:first-child{
+                    margin-bottom: 20px;
+                    a{
+                        color: black;
+
+                        font-size: 16px;
+                    }
+                }
+
+                p{
+                    color: #000;
+                    font-family: Montserrat;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    margin-bottom: 22px;
+                }
+
+                div{
+                    display: flex;
+                    gap: 20px;
+
+                    span:nth-child(1):hover{
+                        cursor: pointer;
+                        svg{
+                            rect{
+                                fill: red;
+                            }
+                        }
+                    }
+
+                    span:nth-child(2):hover{
+                        cursor: pointer;
+                        svg{
+                            rect{
+                                fill:rgb(0, 128, 255);
+                            }
+                        }
+                    }
+                    span:nth-child(3):hover{
+                        cursor: pointer;
+                        svg{
+                            rect{
+                                fill: blue;
+                            }
+                        }
+                    }
+                    span:nth-child(4):hover{
+                        cursor: pointer;
+                        svg{
+                            rect{
+                                fill: rgb(10, 235, 66);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (prefers-color-scheme: dark){
+    footer{
+        border-top: 1.5px solid #333;
+        background: #1C1C1C;
+
+        .foter-wrapper{
+            .foter-box1{
+                div{
+                    p{
+                        color: white;
+                    }
+                }
+
+                ul{
+                    li{
+                        a{
+                            color: white !important;
+                        }
+                    }
+                }
+            }
+
+            .foter-box2{
+                p{
+                    color: white;
+                }
+
+                ul{
+                    li{
+                        a{
+                            color: white !important;
+                        }
+                    }
+
+                    p{
+                        color: white;
+                    }
+
+                    div{
+
+                        span{
+                            svg{
+                                rect{
+                                    fill: white;
+                                }
+    
+                                path{
+                                    fill: black;
+                                }
+                            }
+                            &:hover{
+                                svg{
+                                    path{
+                                        fill: white;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .foter-box2{
+        p{
+            display: none;
+        }
+    }
+}
+
+
+@media screen and (max-width: 390px){
+    .foter-wrapper{
+        .foter-box1{
+            flex-wrap: wrap;
+            gap: 110px !important;
+            justify-content: start !important;
+
+            div{
+                width: 180px !important;
+
+                p{
+                    font-size: 10px;
+                }
+            }
+
+            li{
+                
+            }
+        }
+
+        .foter-box2{
+            flex-wrap: wrap;
+            p{
+                display: none !important;
+            }
+
+            ul{
+                margin-bottom: 30px !important;
+            }
+
+        }
+    }
+}

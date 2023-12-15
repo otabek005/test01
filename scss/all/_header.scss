@@ -1,0 +1,156 @@
+
+.logo_menu{
+    display: none;
+}
+header {
+    width: 100%;
+    padding: 18px 0;
+
+    // example
+
+    .nav{
+        display: flex;
+        height: 70px;
+        align-items: center;
+        justify-content: space-between;
+
+        .ul-list{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            list-style-type: none;
+            text-decoration: none;
+            gap: 20px;
+
+            li{
+                a{
+                    color: #000;
+                    text-align: center;
+                    font-family: Montserrat;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    padding: 18px;
+                }
+            }
+        }
+
+        .ull-list{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            list-style-type: none;
+
+            .box1 > h3{
+                color: #000;
+                font-family: Montserrat;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+
+            .box2 > button{
+                padding: 18px;
+                border: none;
+                border-radius: 100px;
+                background: #F5F5F5;
+                cursor: pointer;
+
+                &:hover{
+                    span > svg > path{
+                        fill: #000;
+                        transition: all 0.2s linear;
+                    }
+                }
+
+               &:active{
+                background:#299764;
+                transition: all 0.2s linear;
+               }
+
+               &:active > span > svg > path{
+                fill: white;
+                transition: all 0.2s linear;
+               }
+                
+            }
+
+            .box3 > button{
+                gap: 10px;
+                display: flex;
+                padding: 18px 30px; 
+                color: #FFF;
+                font-family: Montserrat;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                border-radius: 100px;
+                background: #299764;
+                border: none;
+                cursor: pointer;
+
+                &:hover{
+                    background: #077743;
+                    transition: all 0.5s ease;
+                }
+            }
+        }
+    }
+}
+
+@media (prefers-color-scheme: dark){
+    
+    .ul-list > li > a{
+        color: white !important;
+    }
+
+    .box1 > h3{
+        color: white !important;
+    }
+
+    .box2 > button{
+        background: #272727 !important;
+
+        span > svg > path{
+            fill: white;
+        }
+
+        &:hover{
+            background: #077743 !important;
+            transition: all 0.2s linear;
+            span > svg > path{
+                fill: white ;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px){
+    .logo_menu{
+        display: block;
+    }
+    header{
+       .container{
+            .nav{
+                .ul-list{
+                    li{
+                        a{
+                            display: none;
+                        }
+                    }
+                }
+
+                .ull-list{
+                    display: none;
+                }
+            }
+       }
+    }    
+}
+
+@media screen and (max-width: 390px){
+    
+}

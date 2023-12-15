@@ -1,0 +1,924 @@
+main {
+    width: 100%;
+    min-height: 100vh;
+}
+
+#cars{
+    padding-top: 133px;
+}
+
+.choose-car{
+    h3{
+        color: #000;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    
+    p{
+        color: #555;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 150% */
+        width: 505px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+
+    .buttons{
+        text-align: center;
+        button{
+            @extend %button;
+            cursor: pointer;
+            margin-bottom: 24px;
+        }
+        button:hover{
+            background-color: #299764;
+            color: white;
+            transition: all 0.1s linear;
+        }
+    }
+
+    .choose-car--item2{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap: wrap;
+        li{
+            cursor: pointer;
+            border-radius: 30px;
+            width: 387px;
+            padding: 30px 24px;
+            background: #F5F5F5;
+            list-style-type: none;
+
+            h3{
+                color: #000;
+                font-family: Montserrat;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                text-align: start;
+                margin-bottom: 10px;
+            }
+
+            p{
+                text-align: left;
+                color: #555;
+                font-family: Montserrat;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                margin-bottom: 16px;
+                line-height: normal;
+            }
+
+            img{
+                
+                padding-right: 30px;
+                width: 387px;
+                margin-bottom: 16px;
+            }
+
+            div{
+                display: flex;
+
+                p{
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    color: #000;
+                    font-family: Montserrat;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+            }
+
+            &:hover{
+                background-color: #299764;
+                transition: all 0.2s linear;
+                transform: scale(1.1)
+            }
+
+            &:hover > h3{
+                color: white;
+                transition: all 0.1s linear;
+            }
+
+            &:hover > p{
+                color: white;
+                transition: all 0.1s linear;
+            }
+
+            &:hover > div > p{
+                color: white;
+                transition: all 0.1s linear;
+
+                span > svg > path{
+                    fill: white
+                }
+            }
+        }
+    }
+
+    .view-cars{
+        @extend %button;
+        display: flex;
+        margin: 0 auto;
+        margin-top: 40px;
+        cursor: pointer;
+
+        &:hover{
+            background: #299764;
+            color: white;
+            transition: all 0.2s linear;
+        }
+    }
+}
+
+
+#Google{
+    margin-top: 160px;
+    background: #F5F5F5;
+    padding: 100px 0;
+
+    .google-wrapper{
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+        align-items: center;
+
+        .google-box1{
+            height: 479px;
+            width: 460px;
+            background: white;
+            padding: 85px 70px;
+
+
+            & > p:first-child{
+                cursor: pointer;
+                color: #4285F4;
+                font-family: Montserrat;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 16px;
+            }
+
+            & > h3{
+                width: 300px;
+                color: #000;
+                font-family: Montserrat;
+                font-size: 38px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 50px; /* 131.579% */
+                padding-bottom: 30px;
+                border-bottom: 2px solid black;
+                margin-bottom: 30px;
+            }
+
+            & > p:nth-child(3){
+                color: #555;
+                font-family: Montserrat;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                margin-bottom: 16px;
+            }
+
+            & > button{
+                cursor: pointer;
+                padding: 18px 50px;
+                border-radius: 100px;
+                border: 1.5px solid #F9ED32;
+                font-family: Montserrat;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                background-clip: text;
+                color: red;
+            }
+        }
+
+
+        .google-box2{
+            background-color:#299764;
+            width: 760px;
+            height: 479px;
+            padding: 50px 40px;
+            overflow-x: scroll;
+            .insta{
+                .insta-wrapper{
+                    display: flex;
+                    gap: 200px;
+
+                    .insta-slide{
+                        background-color: white;
+                        width: 480px;
+                        padding: 24px;
+                        
+                        & > div:first-child{
+                            display: flex;
+                            gap: 12px;
+                            justify-content: space-around;
+                            align-items: center;
+                            margin-bottom: 14px;
+
+                            div > h4{
+                                color: #000;
+                                font-family: Montserrat;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 600;
+                                line-height: normal;
+                            }
+
+                            div > p{
+                                color: #555;
+                                font-family: Montserrat;
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                            }
+                        }
+
+                        .tex{
+                            color: #000;
+                            font-family: Montserrat;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 20px; /* 142.857% */
+                            padding-bottom: 25px;
+                            border-bottom: 1px solid black;
+                            margin-bottom: 25px;
+                        }
+
+                        & > div:last-child{
+                            display: flex;
+                            gap: 16px;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+#logos{
+    margin-top: 160px;
+    
+    .logos-wrapper{
+        h3{
+            color: #000;
+            font-family: Montserrat;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            margin-bottom: 34px;
+        }
+
+        ul{
+            display: flex;
+            list-style-type: none;
+            justify-content: space-between;
+        }
+    }
+}
+
+#service{
+    margin-top: 160px;
+    margin-bottom: 160px;
+
+   .service-wrapper{
+        .service-box1{
+            margin-bottom: 40px;
+            h3{
+                color: #000;
+                text-align: center;
+                font-family: Montserrat;
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+
+            p{
+                width: 684px;
+                color: #555;
+                text-align: center;
+                font-family: Montserrat;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px; /* 150% */
+                margin: 0 auto;
+            }
+        }
+
+        .service-box2{
+            ul{
+                display: flex;
+                justify-content: space-between;
+                gap: 20px;
+                flex-wrap: wrap;
+                
+                li{
+                    display: flex;
+                    width: 590px;
+                    list-style-type: none;
+                    padding: 40px 32px;
+                    background: #F5F5F5;
+                    border-radius: 30px;
+                    justify-content: space-between;
+
+                    h3{
+                        width: 211px;
+                        color: #000;
+                        font-family: Montserrat;
+                        font-size: 32px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        margin-bottom: 10px;
+                    }
+
+                    p{
+                        width: 304px;
+                        color: #555;
+                        font-family: Montserrat;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 24px; /* 150% */
+                    }
+
+                    &:hover{
+                        background: #299764;
+                        transition: all 0.2s linear;
+
+                        h3{
+                            color: white;
+                        }
+
+                        p{
+                            color: white;
+                        }
+
+                        span > svg > path{
+                            fill: white;
+                        }
+                    }
+                }
+            }
+        }
+   }
+}
+
+.rental-wrapper{
+    margin-bottom: 160px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    border: 1.5px solid #E5E7EA;
+    background: #FFF;
+    padding: 40px 32px;
+
+    .rental-box1{
+        h3{
+            color: #000;
+            font-family: Montserrat;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            margin-bottom: 8px;
+        }
+
+        p{
+            width: 590px;
+            color: #555;
+            font-family: Montserrat;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; /* 150% */
+            margin-bottom: 98px;
+        }
+
+        ul{
+            display: flex;
+            justify-content: space-between;
+            width: 600px;
+            gap: 10px;
+
+            li{
+                width: 200px;
+                height: 160px;
+                border-radius: 16px;
+                background: #F5F5F5;
+                padding: 15px;
+                list-style-type: none;
+                span{
+                    margin-left: 130px;
+                }
+
+                p{
+                    width: 170px;
+                    margin-top: 30px;
+                    color: #000;
+                    font-family: Montserrat;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 22px; /* 137.5% */
+                }
+
+                &:hover{
+                    background: #299764;
+                    transition: all 0.2s linear;
+                    p{
+                        color: white;
+                        transition: all 0.1s linear;
+                    }
+
+                    span{
+                        svg{
+                            path{
+                                fill: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .rental-box2{
+        position: relative;
+        padding-right: 80px;
+        div{
+            background: #299764;
+            width: 300px;
+            height: 300px;
+            flex-shrink: 0;
+            border-radius: 50%;
+        }
+
+        img{
+            position: absolute;
+            top: 0;
+            right: 50px;
+        }
+    }
+}
+
+
+
+
+@media (prefers-color-scheme: dark){
+    .choose-car{
+        .choose-car--item1{
+            h3{
+                color: white ;
+            }
+
+            p{
+                color: white;
+            }
+
+            .buttons{
+                button{
+                    color: white;
+                }
+            }
+        }
+
+        .choose-car--item2{
+            li{
+                background: #272727;
+                h3{
+                    color: white;
+                }
+
+                p{
+                    color: white;
+                }
+
+                div{
+                    p{
+                        color: white;
+                    }
+
+                    span > svg > path{
+                        fill: white;
+                    }
+                }
+            }
+        }
+
+        button{
+            color: white !important;
+        }
+    }
+
+    #Google{
+        background: #272727;
+        .google-box1{
+            background: #1C1C1C !important ;
+            p{
+                span{
+                    background-color: white !important;
+                    border-radius: 50%;
+                    padding: 5px 8px;
+                }
+            } 
+
+            h3{
+                color: white !important;
+            }
+
+            & > p:nth-child(3){
+                color: white !important;
+            }
+
+            .insta_button{
+                background: white !important;
+            }
+        }
+
+        .google-box2{
+            .insta-wrapper{
+                .insta-slide{
+                    background: #1C1C1C !important;
+                    border-radius: 16px;
+
+                    div{
+                        h4{
+                            color: white !important;
+                        }
+                        p{
+                            color: rgba(255, 255, 255, 0.567) !important;
+                        }
+                    }
+
+                    p{
+                        color: white !important;
+                    }
+                }
+            }
+        }
+
+    }
+
+    #logos{
+        .logos-wrapper{
+            h3{
+                color: white;
+            }
+
+            ul{
+                li{
+                    img{
+                        mix-blend-mode:hard-light;
+                    }
+                }
+            }
+        }
+    }
+
+    #service{
+        .service-wrapper{
+            .service-box1{
+                p{
+                    color: white;
+                }
+
+                h3{
+                    color: white;
+                }
+            }
+        }
+
+        .service-box2{
+            ul{
+                li{
+                    background: #272727 !important; 
+                    div{
+                        h3{
+                            color: white !important;
+                        }
+
+                        p{
+                            color: white !important;
+                        }
+                    }
+
+                    &:hover{
+                        background-color: #299764 !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .rental-wrapper{
+        background: #1C1C1C;
+        border: 1.5px solid #333;
+
+        .rental-box1{
+            h3{
+                color: white;
+            }
+            p{
+                color: white;
+            }
+
+            ul{
+                li{
+                    background: #272727;
+
+                    span{
+                        svg{
+                            path{
+                                fill: white;
+                            }
+                        }
+                    }
+
+                    p{
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px){
+    #cars{
+        .container{
+            .choose-car{
+                .choose-car--item1{
+                   .buttons{
+                    display: flex;
+                    justify-content: center;
+                    gap: 20px;
+                   }
+                }
+
+                .choose-car--item2{
+                    li{
+                        width: 340px;
+                        img{
+                            width: 355px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #Google{
+        .container{
+            .google-wrapper{
+                display: block;
+                .google-box1{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+
+                    h3{
+                        width: 320px;
+                    }
+
+                    button{
+                        width: 180px;
+                        margin: 0 auto;
+                    }
+
+                }
+            }
+        }
+    }
+
+    #logos{
+        .container{
+            .logos-wrapper{
+                ul{
+                    flex-wrap: wrap;
+                    li{
+                        width: 200px;
+                        margin-bottom: 40px;
+                    }
+                }
+            }
+        }
+    }
+
+    .service-wrapper{
+        .service-box2{
+            ul{
+                display: flex;
+                li{
+                    max-width: 340px;
+                    
+                    div{
+
+                        h3{
+                            width: 200px !important;
+                            font-size: 28px;
+                        }
+                        p{
+                            width: 200px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .rental-wrapper{
+        width: 780px !important;
+
+        .rental-box1{
+            width: 400px !important;
+            p{
+                width: 377px;
+            }
+
+            ul{
+                width: 400px;
+                li{
+                    z-index: 5;
+                    width: 120px !important;
+                    p{
+                        font-size: 14px;
+                        width: 110px;
+                        margin-top: 10px;
+                    }
+
+                    span{
+                        width: 100px;
+                        margin-left: 50px;
+                    }
+                }
+            }
+        }
+
+        .rental-box2{
+            div{
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                right: 80px;
+                top: 130px;
+            }
+
+            img{
+                width: 284px;
+                height: 332px;
+                top: 155px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:390px){
+    .choose-car{
+        .choose-car--item1{
+            h3{
+                width: 230px;
+                font-size: 24px;
+                margin: 0 auto;
+            }
+
+            p{
+                font-size: 12px;
+                width: 281px;
+            }
+
+            .buttons{
+                gap: 0px;
+                button{
+                    width: 106px;
+                    padding: 14px 20px;
+                }
+            }
+        }
+    }
+
+    .google-wrapper{
+        .google-box1{
+            p{
+                width: 130px !important;
+            }
+
+            h3{
+                width: 306px !important;
+                font-size: 38px;
+            }
+        }
+
+        .google-box2{
+            width: 340px !important;
+            padding: 20px 16px !important;
+            height: 400px !important;
+            .insta{
+                .insta-wrapper{
+                    gap: 20px !important;
+                   .insta-slide{
+                      
+                   }
+                }
+            }
+        }
+    }
+
+
+    .logos-wrapper{
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            width: 350px !important;
+            li{
+                width:150px !important;
+          }  
+        }
+    }
+
+    .service-wrapper{
+        .service-box1{
+            h3{
+                font-size: 24px;   
+            }
+
+            p{
+                width: 321px !important;
+                font-size: 12px;
+            }
+        }
+    }
+
+    .rental-wrapper{
+        width: 350px !important;
+        overflow: hidden;
+        .rental-box1{
+            h3{
+                font-size: 24px;
+                width: 193px;
+            }
+            
+            p{
+                width: 311px;
+                font-size: 12px;
+            }
+
+            ul{
+                flex-direction: column;
+                
+
+                li{
+                    width: 75% !important;
+                    span{
+                        margin-left: 230px !important;
+                    }
+
+                    p{
+                        width: 250px !important;
+
+                    }
+                }
+            }
+        }
+
+        .rental-box2{
+            div{
+                top: -140px;
+            }
+            img{
+                display: none;
+            }
+        }
+    }
+
+}
